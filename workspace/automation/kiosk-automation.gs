@@ -1,5 +1,6 @@
+// AI-assisted, directed by akon
+function checkStock()  {
 
-function checkStock() {
  const ss = SpreadsheetApp.getActiveSpreadsheet();
  const dashboard = ss.getSheetByName("DASHBOARD");
  const StockData = dashboard.getRange("A12:C15").
