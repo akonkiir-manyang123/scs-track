@@ -2,8 +2,8 @@
 
 Label: AI-assisted, directed by akon
 Tool:ChatGPT
-Spec initialled on (2026-11-19):
-First prompt sent on (2026-11-19 11:30):
+Spec initialled on :2026-11-19
+First prompt sent on :2026-11-19 11:30
 
 ## The one prompt, word for word
 <!-- The initialled spec, the column headings, the made-up rows, "Apps Script on Google Sheets", "a comment on -->
@@ -12,8 +12,6 @@ First prompt sent on (2026-11-19 11:30):
 The one prompt, word for word
 
 I used ChatGPT to assist me with my SCS3.5 Apps Script assignment. I asked for help understanding the assignment instructions, preparing and reviewing my kiosk automation script, and completing the required reading, testing and evidence logs.
-
-Note: This is a summary, not the exact original prompt. Replace it with your original prompt if your assignment requires it word for word.
 
 What came back, and what I changed by hand
 The initial script was committed together with the four SCS3.5 template files in commit bab6066. It was not a script-only commit. I later added the required AI label and synchronised the project copy with the Apps Script editor. This separate patch was committed as 4c2de88.
