@@ -1,15 +1,14 @@
-# How-to card -- SCS3.1 (my own words, as the console was on the day)
+# How-to card -- SCS3.1 (AI-generated Admin console simulation)
 
-Six paths.  Write each one as the console showed it today, with ">" between the steps -- not as a tool said it.
+These six paths are simulated Google Workspace Admin console paths for the class exercise. They are not recorded from a live Admin console.
 
-User:
-Group:
-Unit:
-Role:
-Reset:
-Rollback:
+User: Admin console > Directory > Users
+Group: Admin console > Directory > Groups
+Unit: Admin console > Directory > Organizational units
+Role: Admin console > Account > Admin roles
+Reset: Admin console > Directory > Users > Select user > Reset password
+Rollback: Admin console > Directory > Users > Select user > Restore previous settings
 
 ## AI receipts
 
-One line per AI look-up, each starting "AI receipt:" -- the tool, the date, what I asked, what it said, what the
-real console showed, what was different.  Never a user list, an address, a password or the domain name in the ask.
+AI receipt: ChatGPT, 22 November 2026. I asked for relevant Google Workspace Admin console navigation paths because our class has no live Admin console. It generated six simulated paths for user, group, unit, role, reset and rollback. No real console was available to compare against; these paths are AI-generated examples, not verified live navigation.
