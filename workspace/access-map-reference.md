@@ -13,7 +13,7 @@ Why: what the job needs, what goes wrong with more, and who decided.
 | The shop manager | Staff schedules, stock and shop operations | /Staff | Shop-Managers | None | Needs to coordinate shop work; access to security settings could cause disruption; the owner decides. |
 | Counter staff (four) | Sales records and counter information | /Staff/Front Desk | Counter-Team | None | Needs counter tools to serve customers; access to payroll and administration is unnecessary; the owner decides. |
 | The new starter (a sandbox user, ticket 1) | Basic front desk tools and training materials | /Staff/Front Desk | Front-Desk, Trainees | None | Needs only starter duties and training; wider access could expose business information; the owner decides. |
-| Welders (three) | Workshop schedules and job instructions | /Workshop | Workshop-Team | None | Needs workshop instructions to complete jobs; financial and user administration access is unnecessary; the owner decides. |
+| Welders (three) | Workshop schedules and job instructions | /Workshop | Fabrication-Team | None | Needs workshop instructions to complete jobs; financial and user administration access is unnecessary; the owner decides. |
 | Drivers (two) | Delivery schedules and dispatch information | /Delivery | Delivery-Team | None | Needs delivery details to complete routes; access to staff records and settings is unnecessary; the owner decides. |
 | Me (the admin) | User support and password resets | /Administration | IT-Support | Help Desk Admin | Needs limited user support tools; full control could change security and business settings; the owner decides. |
 
