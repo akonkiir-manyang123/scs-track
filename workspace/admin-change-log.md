@@ -28,3 +28,5 @@ Practice OU only.  Every row written before the click; the check column filled a
 
 | # | Time | What I am about to change (console path) | Who or what it affects | Why, in one line | How I checked it | Undo |
 |---|---|---|---|---|---|---|
+
+| 1 | 2026-11-22 20:26 | Admin console > Apps > Google Workspace > Drive and Docs > Sharing settings (planned; not yet changed) | Practice OU external sharing | Review whether external sharing is restricted and confirm the owner's approved sharing rule before changing anything | Pending — not yet checked | Not applicable yet |
