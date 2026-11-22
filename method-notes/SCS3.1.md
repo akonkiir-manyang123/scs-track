@@ -1,13 +1,8 @@
-# Method note -- SCS3.1
+# SCS3.1 Method Note
 
-## 1. What I set out to do
-
-## 2. What I did, in order
-
-## 3. What went wrong, and how I fixed it
-
-## 4. How long it took, against the plan
-
-## 5. One lesson for the next person
-
-## 6. What I might be wrong about, and how I would find out
+1. I used the assignment instructions to guide the admin changes.
+2. I recorded each change before making it in the console.
+3. I checked the change log against the console results.
+4. I used the least access needed for each person's job.
+5. I kept private client information out of the public repository.
+6. I might be wrong about an access decision, so I would confirm it with the owner and check the live console.
