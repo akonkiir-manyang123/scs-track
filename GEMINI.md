@@ -12,3 +12,6 @@ No external npm packages; uses built-in `node:fs`, `node:test`, and `node:assert
 - Never import unverified or invented Node built-ins (such as `fetchWithRetry` from `node:http`) without checking official Node docs first.
 - Never paste real client names, phone numbers, or customer records into prompts or public repo files; use invented rows only.
 - Never rewrite an entire file when asked to patch a single function.
+
+## Skills
+- `skills/weekly-stock-audit/SKILL.md` — Weekly stock reorder check and dry-run verification.
