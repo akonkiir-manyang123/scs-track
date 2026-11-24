@@ -8,8 +8,8 @@ page you read and the date you read it. One section per piece; add a new piece a
 
 ### Auth
 Looked for: Hardcoded API keys, tokens, or secrets in code, git history, or dry-run URLs.
-Found: Hardcoded `SMS_API_KEY = "LLDEMO-SMS-<redacted>"` in `workspace/stock-tools/send-sms.js:9`, exposed in URL query string and git history.
-Evidence: `git grep -n "SMS_API_KEY" workspace/stock-tools/` -> `workspace/stock-tools/send-sms.js:9:const SMS_API_KEY = "LLDEMO-SMS-<redacted>";`
+Found: Hardcoded `SMS_API_KEY = "<redacted>"` in `workspace/stock-tools/send-sms.js:9`, exposed in URL query string and git history.
+Evidence: `git grep -n "SMS_API_KEY" workspace/stock-tools/` -> `workspace/stock-tools/send-sms.js:9:const SMS_API_KEY = "<redacted>";`
 
 ### Edge cases
 Ugly inputs, written before trying them: Blank stock cell (`Cement 50 kg`), quoted comma in item name (`"Nails, 3 inch"`), boundary equal to reorder level (`grinding discs 115 mm` at 20/20), apostrophe (`ng'ombe salt lick`), ampersand (`Nuts & bolts M10`).
