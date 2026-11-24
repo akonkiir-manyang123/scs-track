@@ -21,7 +21,11 @@ function parseCsv(text) {
 
 // Items at or below their reorder level.
 function reorderList(rows) {
-  return rows.filter((r) => parseInt(r["In stock"], 10) <= parseInt(r["Reorder at"], 10));
+  return rows.filter((r) => {
+    const inStock = parseInt(r["In stock"], 10);
+    const reorderAt = parseInt(r["Reorder at"], 10);
+    return !Number.isNaN(inStock) && !Number.isNaN(reorderAt) && inStock <= reorderAt;
+  });
 }
 
 // One list per supplier, so each supplier gets one message.
