@@ -9,7 +9,7 @@
 | 4. Can the owner maintain basic spreadsheet rows after setup? | Yes, the owner already records daily sales in a notebook. |
 | 5. Would custom software cost more time/money than the problem justifies? | Yes, custom software is unnecessary overhead for a single kiosk. |
 
-Verdict: Sheets.  Pattern: Stock ledger (IN / OUT).  Because: The owner only tracks under 30 items at one kiosk and needs simple daily stock totals with zero software cost.
+Verdict: Sheets.  Pattern: inventory.  Because: The owner only tracks under 30 items at one kiosk and needs simple daily stock totals with zero software cost.
 
 ## Validation and protection
 - Rule 1 (ITEM dropdown): Typed `InvalidItem` -> rejected by strict Reject-input rule.
@@ -20,12 +20,11 @@ Verdict: Sheets.  Pattern: Stock ledger (IN / OUT).  Because: The owner only tra
 - Protection range 3: `Records!F2:F` calculated AMOUNT column (warn/restrict manual edits).
 
 ## AI receipts
-| Tool / Prompt | Formula Suggested |
-| :--- | :--- |
-| Gemini (Chrome side panel) | `=SUMIFS(Records!$D$2:$D, Records!$B$2:$B, A4, Records!$C$2:$C, "IN")` |
-| Gemini (Chrome side panel) | `=SUMIFS(Records!$D$2:$D, Records!$B$2:$B, A4, Records!$C$2:$C, "OUT")` |
-| Gemini (Chrome side panel) | `=SUMIFS(Records!$F$2:$F, Records!$B$2:$B, A4, Records!$C$2:$C, "OUT")` |
-| Gemini (Chrome side panel) | `=IF(D4<10, "REORDER", "")` |
+| # | The ask (column headings only) | The formula | What I changed | The hand check (log row) |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — sum stock IN per item | `=SUMIFS(Records!$D$2:$D, Records!$B$2:$B, A4, Records!$C$2:$C, "IN")` | Locked column ranges with `$` and matched relative item row `A4` | Row 1 (`Dashboard!B4` = 20) |
+| 2 | `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — sum stock OUT per item | `=SUMIFS(Records!$D$2:$D, Records!$B$2:$B, A4, Records!$C$2:$C, "OUT")` | Changed direction criterion to `"OUT"` and trimmed trailing spaces | Row 2 (`Dashboard!C4` = 40) |
+| 3 | `DATE, ITEM, DIRECTION, QUANTITY, PRICE, AMOUNT` — sum total sales per item | `=SUMIFS(Records!$F$2:$F, Records!$B$2:$B, A4, Records!$C$2:$C, "OUT")` | Pointed sum range to `AMOUNT` (`$F$2:$F`) for `"OUT"` rows | Row 4 (`Dashboard!E4` = 10000) |
 
 ## Break the books
 | Attack | What I said would happen | What happened | Held or the fix |
